@@ -1,0 +1,49 @@
+# Segaraders - Bahasa Indonesia
+profile=Profil
+profile.LOW=Rendah
+profile.MEDIUM=Sedang
+profile.HIGH=Tinggi
+profile.ULTRA=Ultra
+
+screen.ATMOSPHERE=Atmosfer
+
+option.BORDER_FOG=Kabut Tepi
+option.BORDER_FOG.comment=Memudarkan terrain jauh ke warna langit secara halus.
+option.FOG_START=Awal Kabut
+option.FOG_START.comment=Persentase jarak render tempat kabut tepi mulai muncul.
+
+screen.WATER=Air
+
+option.WATER_WAVES=Geometri Gelombang
+option.WATER_WAVES.comment=Permukaan air benar-benar naik turun.
+option.WATER_WAVE_HEIGHT=Tinggi Gelombang
+option.WATER_WAVE_HEIGHT.comment=Tinggi gelombang geometri dalam satuan blok.
+option.WATER_WAVE_SPEED=Kecepatan Gelombang
+option.WATER_WAVE_SPEED.comment=Kecepatan animasi semua gelombang.
+option.WATER_WAVE_OCTAVES=Detail Gelombang
+option.WATER_WAVE_OCTAVES.comment=Jumlah lapisan gelombang untuk detail permukaan. Lebih tinggi lebih tajam tapi lebih berat.
+option.WATER_NORMAL_STRENGTH=Kekasaran Permukaan
+option.WATER_NORMAL_STRENGTH.comment=Seberapa kuat riak kecil membelokkan pantulan dan cahaya.
+option.WATER_REFLECTIONS=Pantulan
+option.WATER_REFLECTIONS.comment=Mati, hanya langit, atau pantulan screen-space (SSR) dengan cadangan langit.
+value.WATER_REFLECTIONS.0=Mati
+value.WATER_REFLECTIONS.1=Hanya Langit
+value.WATER_REFLECTIONS.2=Screen Space
+option.SSR_STEPS=Kualitas Pantulan
+option.SSR_STEPS.comment=Jumlah langkah ray-march untuk pantulan screen-space. Biaya performa terbesar.
+option.SSR_REFINE_STEPS=Presisi Pantulan
+option.SSR_REFINE_STEPS.comment=Langkah penghalusan agar titik kontak pantulan lebih tajam.
+option.WATER_SUN_SPECULAR=Kilau Matahari
+option.WATER_SUN_SPECULAR.comment=Kecerahan kilauan matahari dan bulan di gelombang.
+option.WATER_REFRACTION=Refraksi
+option.WATER_REFRACTION.comment=Membiaskan pemandangan yang terlihat menembus permukaan air.
+option.WATER_REFRACTION_STRENGTH=Kekuatan Refraksi
+option.WATER_CLARITY=Kejernihan Air
+option.WATER_CLARITY.comment=Nilai lebih tinggi membuat dasar air terlihat lebih dalam.
+option.WATER_BIOME_TINT=Warna Air Biome
+option.WATER_BIOME_TINT.comment=Pakai warna air tiap biome (rawa keruh, laut biru pekat).
+option.WATER_CAUSTICS=Kaustik
+option.WATER_CAUSTICS.comment=Pola cahaya menari di permukaan bawah air.
+option.WATER_CAUSTICS_STRENGTH=Kekuatan Kaustik
+option.WATER_FOAM=Buih Pantai
+option.WATER_FOAM.comment=Buih putih di tempat air bertemu daratan.

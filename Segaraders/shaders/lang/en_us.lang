@@ -1,0 +1,49 @@
+# Segaraders - English
+profile=Profile
+profile.LOW=Low
+profile.MEDIUM=Medium
+profile.HIGH=High
+profile.ULTRA=Ultra
+
+screen.ATMOSPHERE=Atmosphere
+
+option.BORDER_FOG=Border Fog
+option.BORDER_FOG.comment=Blends distant terrain smoothly into the sky.
+option.FOG_START=Fog Start
+option.FOG_START.comment=Fraction of render distance where border fog begins.
+
+screen.WATER=Water
+
+option.WATER_WAVES=Wave Geometry
+option.WATER_WAVES.comment=Physically moves the water surface up and down.
+option.WATER_WAVE_HEIGHT=Wave Height
+option.WATER_WAVE_HEIGHT.comment=Height of geometry waves in blocks.
+option.WATER_WAVE_SPEED=Wave Speed
+option.WATER_WAVE_SPEED.comment=Animation speed of all waves.
+option.WATER_WAVE_OCTAVES=Wave Detail
+option.WATER_WAVE_OCTAVES.comment=Number of wave layers used for surface detail. Higher is sharper but slower.
+option.WATER_NORMAL_STRENGTH=Surface Roughness
+option.WATER_NORMAL_STRENGTH.comment=How strongly small waves bend reflections and light.
+option.WATER_REFLECTIONS=Reflections
+option.WATER_REFLECTIONS.comment=Off, sky only, or screen-space reflections (SSR) with sky fallback.
+value.WATER_REFLECTIONS.0=Off
+value.WATER_REFLECTIONS.1=Sky Only
+value.WATER_REFLECTIONS.2=Screen Space
+option.SSR_STEPS=Reflection Quality
+option.SSR_STEPS.comment=Ray-march steps for screen-space reflections. Biggest performance cost.
+option.SSR_REFINE_STEPS=Reflection Precision
+option.SSR_REFINE_STEPS.comment=Refinement steps that sharpen reflection contact points.
+option.WATER_SUN_SPECULAR=Sun Glint
+option.WATER_SUN_SPECULAR.comment=Brightness of the sun and moon sparkle on waves.
+option.WATER_REFRACTION=Refraction
+option.WATER_REFRACTION.comment=Distorts what is seen through the water surface.
+option.WATER_REFRACTION_STRENGTH=Refraction Strength
+option.WATER_CLARITY=Water Clarity
+option.WATER_CLARITY.comment=Higher values let you see deeper into the water.
+option.WATER_BIOME_TINT=Biome Water Color
+option.WATER_BIOME_TINT.comment=Use each biome's water color (swamps look murky, oceans deep blue).
+option.WATER_CAUSTICS=Caustics
+option.WATER_CAUSTICS.comment=Dancing light patterns on surfaces under water.
+option.WATER_CAUSTICS_STRENGTH=Caustics Strength
+option.WATER_FOAM=Shore Foam
+option.WATER_FOAM.comment=White foam where water meets the shore.
