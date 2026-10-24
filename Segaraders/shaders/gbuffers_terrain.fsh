@@ -3,6 +3,7 @@
 #define USE_TEXTURE
 #define USE_LIGHTMAP
 #define USE_ALPHA_TEST
+#define USE_BLOCK_ID
 
 /* RENDERTARGETS: 0 */
 #include "/lib/programs/gbuffers_generic.fsh.glsl"

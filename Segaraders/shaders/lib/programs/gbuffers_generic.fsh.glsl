@@ -1,7 +1,8 @@
 // Generic gbuffers fragment program. Writes linear color to colortex0.
 // Feature switches (define before include):
 //   USE_TEXTURE, USE_LIGHTMAP, USE_ALPHA_TEST, USE_ENTITY_COLOR,
-//   KEEP_SRGB (for multiplicative overlays such as block breaking cracks)
+//   KEEP_SRGB (for multiplicative overlays such as block breaking cracks),
+//   USE_BLOCK_ID (terrain, id from vertex), USE_BLOCK_ENTITY_ID (block entities)
 
 #include "/lib/common.glsl"
 
@@ -17,6 +18,12 @@ uniform sampler2D lightmap;
 #ifdef USE_ENTITY_COLOR
 uniform vec4 entityColor; // hurt / creeper flash
 #endif
+#ifdef USE_BLOCK_ID
+flat in int blockId;
+#endif
+#ifdef USE_BLOCK_ENTITY_ID
+uniform int blockEntityId;
+#endif
 
 layout(location = 0) out vec4 outColor0;
 
@@ -27,6 +34,14 @@ void main() {
 #endif
 #ifdef USE_ALPHA_TEST
     if (albedo.a < ALPHA_CUTOFF) discard;
+#endif
+#if defined USE_BLOCK_ID || defined USE_BLOCK_ENTITY_ID
+  #ifdef USE_BLOCK_ID
+    int id = blockId;
+  #else
+    int id = blockEntityId;
+  #endif
+    if (id == INFESTED_LEAF_ID) albedo.rgb = vec3(luminance(albedo.rgb)); // gray leaves
 #endif
 #ifdef USE_ENTITY_COLOR
     albedo.rgb = mix(albedo.rgb, entityColor.rgb, entityColor.a);

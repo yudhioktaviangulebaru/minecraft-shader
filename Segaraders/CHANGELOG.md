@@ -1,5 +1,9 @@
 # Changelog
 
+## [Unreleased]
+### Added
+- Daun `exdeorum:infested_leaf` (Ex Deorum) dirender abu-abu (desaturasi) di terrain dan block entity.
+
 ## [0.2.0] - 2026-10-16
 ### Added
 - Air realistis:

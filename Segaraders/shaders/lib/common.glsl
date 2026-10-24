@@ -5,6 +5,7 @@
 const float PI          = 3.14159265;
 const float GAMMA       = 2.2;     // approximate sRGB transfer exponent
 const float ALPHA_CUTOFF = 0.1;    // vanilla cutout threshold
+const int   INFESTED_LEAF_ID = 10018; // block.properties id for exdeorum infested leaves
 
 vec3 toLinear(vec3 c) { return pow(max(c, 0.0), vec3(GAMMA)); }
 vec3 toSRGB(vec3 c)   { return pow(max(c, 0.0), vec3(1.0 / GAMMA)); }
